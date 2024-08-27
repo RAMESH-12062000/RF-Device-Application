@@ -49,6 +49,25 @@ sap.ui.define([
                 oView.byId("_IDGenComboBox1").setSelectedKey("");
                 oView.byId("_IDGenComboBox2").setSelectedKey("");
                 oView.byId("_IDGenComboBox3").setSelectedKey("");
+            },
+            onFargotPasswordPress: async function () {
+                if (!this.onFargotPassword) {
+                    this.onFargotPassword = await this.loadFragment("fargotPassword")
+                }
+                this.onFargotPassword.open();
+            },
+
+            //Fargot Password Fragment close...
+            onCloseFP: function () {
+                this.onForgotPasswordDialog.close();
+            },
+
+            //for opens the forgot Password...
+            onFargotPasswordPress: async function(){
+                if (!this.onForgotPasswordDialog) {
+                    this.onForgotPasswordDialog = await this.loadFragment("fargotPassword")
+                }
+                this.onForgotPasswordDialog.open();
             }
 
         });

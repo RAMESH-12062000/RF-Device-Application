@@ -120,13 +120,13 @@
                                 <Button
                                     id="idButtonLogin"
                                     text="Login"
-                                    class="SubmitBtnFromVendorPage"
+                                    class="onLoginBtnfromHome"
                                     press="onLoginPress"
                                 />
                                 <Button
                                     id="idButtonClear"
                                     text="Clear"
-                                    class="ClearBtnFromVendorPage"
+                                    class="ClearBtnFromHome"
                                     press="onClearPress"
                                 />
                             </HBox>
@@ -147,6 +147,7 @@
                         <Link
                             id="idLinkPassword"
                             text="Forgot Password"
+                            press="onFargotPasswordPress"
                             class="onForgotPassword"
                         />
                     </HBox>

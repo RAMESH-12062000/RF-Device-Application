@@ -8,14 +8,14 @@
         resizable="false"
         draggable="true"
         contentWidth="30%"
-        title="Register Your Details:"
+        title="Sign-up Page:"
     >
         <customHeader>
             <Bar id="_IDGenBar1">
                 <contentMiddle>
                     <Title
                         id="_IDGenTitle1"
-                        text="Register Your Details:"
+                        text="Sign-up Page:"
                     />
                 </contentMiddle>
                 <contentRight>
@@ -47,7 +47,7 @@
 
         <content>
             <form:SimpleForm
-                id="idRegisterUserDetailsForm"
+                id="idRegisterUserDetailsForm879875"
                 editable="true"
                 layout="ResponsiveGridLayout"
                 labelSpanXL="3"
@@ -73,8 +73,18 @@
                 <ComboBox id="_IDGenComboBox1" placeholder="Select Area from Dropdown..">
                     <core:Item
                         id="_IDGenItem1"
-                        key=""
-                        text=""
+                        key="InBound"
+                        text="InBound"
+                    />
+                    <core:Item
+                        id="_IDGenItemOut2"
+                        key="OutBound"
+                        text="OutBound"
+                    />
+                    <core:Item
+                        id="_IDGenItemInternal3"
+                        key="InternalProcess"
+                        text="InternalProcess"
                     />
                 </ComboBox>
                 <Label
@@ -85,18 +95,6 @@
                 <ComboBox id="_IDGenComboBox2" placeholder="Select Group from Dropdown..">
                     <core:Item
                         id="_IDGenItem2"
-                        key=""
-                        text=""
-                    />
-                </ComboBox>
-                <Label
-                    id="idLableUserName"
-                    text="Resource Type"
-                    required="true"
-                />
-                <ComboBox id="_IDGenComboBox3" placeholder="Select Resource type from Dropdown..">
-                    <core:Item
-                        id="_IDGenItem3"
                         key=""
                         text=""
                     />

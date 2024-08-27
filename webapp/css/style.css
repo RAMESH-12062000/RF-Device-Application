@@ -17,17 +17,35 @@
     background-image: url('https://i.ibb.co/bPfN0wS/maxresdefault.jpg');
 }
 /* Button Styles */
-.SubmitBtnFromVendorPage .sapMBtnText {
+.onLoginBtnfromHome .sapMBtnText {
     background-color: white !important;
     color: green;
     margin-right: 0.5rem;
     font-weight: bold !important;
+    border-color: transparent !important;
+}
+.onSubmitBtnFromFragment .sapMBtnText {
+    background-color: white !important;
+    color: green !important;
+    font-weight: bold !important;
+}
+.onResetRegisterBtn .sapMBtnText {
+    background-color: white !important;
+    color: green !important;
+    border-color: transparent !important;
+    margin-left: 2rem;
 }
 
-.ClearBtnFromVendorPage .sapMBtnText {
+.onCancelRegisterBtn .sapMBtnText {
     background-color: white !important;
-    color: red;
+    color: red !important;
     font-weight: bold !important;
+}
+.ClearBtnFromHome .sapMBtnText {
+    background-color: white !important;
+    color: red !important;
+    font-weight: bold !important;
+    border-color: transparent !important;
 }
 
 .hidden {
