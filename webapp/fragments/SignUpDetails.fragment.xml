@@ -1,0 +1,153 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+>
+    <Dialog
+        id="dialog"
+        resizable="false"
+        draggable="true"
+        contentWidth="30%"
+        title="Register Your Details:"
+    >
+        <customHeader>
+            <Bar id="_IDGenBar1">
+                <contentMiddle>
+                    <Title
+                        id="_IDGenTitle1"
+                        text="Register Your Details:"
+                    />
+                </contentMiddle>
+                <contentRight>
+                    <Button
+                        id="_IDGenButton1"
+                        icon="sap-icon://decline"
+                        press="onCloseRegisterSubmitDialog"
+                        tooltip="Close"
+                    />
+                </contentRight>
+            </Bar>
+        </customHeader>
+        <beginButton>
+            <Button
+                id="idRegisterUserButton"
+                text="Submit"
+                press="onSubmitPress"
+                class="onSubmitBtnFromFragment"
+            />
+        </beginButton>
+        <endButton>
+            <Button
+                id="idCancelRegisterUserButton"
+                text="Clear"
+                press="onClearRegisterSubmitDialog"
+                class="onCancelRegisterBtn"
+            />
+        </endButton>
+
+        <content>
+            <form:SimpleForm
+                id="idRegisterUserDetailsForm"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="4"
+                emptySpanL="4"
+                emptySpanM="4"
+                emptySpanS="0"
+                columnsXL="1"
+                columnsL="1"
+                columnsM="1"
+                singleContainerFullSize="false"
+            >
+                <Label
+                    id="idLableName"
+                    text="Area"
+                    required="true"
+                />
+
+                <ComboBox id="_IDGenComboBox1" placeholder="Select Area from Dropdown..">
+                    <core:Item
+                        id="_IDGenItem1"
+                        key=""
+                        text=""
+                    />
+                </ComboBox>
+                <Label
+                    id="idLableEmail"
+                    text="Group"
+                    required="true"
+                />
+                <ComboBox id="_IDGenComboBox2" placeholder="Select Group from Dropdown..">
+                    <core:Item
+                        id="_IDGenItem2"
+                        key=""
+                        text=""
+                    />
+                </ComboBox>
+                <Label
+                    id="idLableUserName"
+                    text="Resource Type"
+                    required="true"
+                />
+                <ComboBox id="_IDGenComboBox3" placeholder="Select Resource type from Dropdown..">
+                    <core:Item
+                        id="_IDGenItem3"
+                        key=""
+                        text=""
+                    />
+                </ComboBox>
+                <Label
+                    id="idLablePhoneNumber"
+                    text="Resource ID "
+                    required="true"
+                />
+                <Input
+                    id="idPhoneNumberInput"
+                    value="{localModel2>/phonenumber}"
+                    placeholder="Enter Resource ID.."
+                    required="true"
+                />
+
+                <Label
+                    id="idLableCreatePassword"
+                    text="Employee Name"
+                    required="true"
+                />
+                <Input
+                    id="idCreatePasswordInput"
+                    value="{localModel2>/Password}"
+                    placeholder="Enter your Name.."
+                    required="true"
+                />
+                <Label
+                    id="idLableUserType"
+                    text="Email"
+                    required="true"
+                />
+                <Input
+                    id="idInputuserType"
+                    value="{localModel2>/userType}"
+                    placeholder="Enter Email.."
+                    editable="true"
+                    required="true"
+                />
+                <Label
+                    id="idLableUserType5"
+                    text="Phone Number"
+                />
+                <Input
+                    id="idInputuserType8"
+                    value="{localModel2>/userType}"
+                    placeholder="Enter Phone Number.."
+                    editable="true"
+                    required="true"
+                />
+            </form:SimpleForm>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>
