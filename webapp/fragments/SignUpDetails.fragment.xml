@@ -101,7 +101,7 @@
                 </ComboBox>
                 <Label
                     id="idLablePhoneNumber"
-                    text="Resource ID "
+                    text="Resource ID"
                     required="true"
                 />
                 <Input
