@@ -1,4 +1,4 @@
-<mvc:View
+<!-- <mvc:View
     controllerName="com.app.rfdeviceapplication.controller.Home"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
@@ -15,7 +15,7 @@
                 id="idHbox1"
                 class="header"
             >
-                <!-- Positioned at the top-left corner -->
+                
                 <VBox
                     id="idVBoxLogoText"
                     class="logoTextContainer"
@@ -25,7 +25,7 @@
                         src="https://i.postimg.cc/3wBkmqjQ/Artihcus-logo-1-transformed.png"
                         class="logoImage"
                     />
-                    <!-- New VBox for Welcome text -->
+                    
                     <VBox
                         id="idVBoxWelcome"
                         class="welcomeContainer glassEffect"
@@ -35,7 +35,7 @@
                             text="'Welcome..!"
                             class="welcomeText"
                         />
-                        <!-- Additional message below the welcome text -->
+                        
                         <Text
                             id="idTextMessage"
                             text="We're glad to have you here!"
@@ -155,4 +155,99 @@
             </VBox>
         </VBox>
     </Page>
+</mvc:View> -->
+
+
+<mvc:View
+    controllerName="com.app.rfdeviceapplication.controller.Home"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page id="pageInitial">
+        <content>
+            <FlexBox
+                id="_IDGenFlexBoxInitial"
+                height="100%"
+                direction="Column"
+                alignItems="Center"
+            >
+                <VBox
+                    id="environmentButtonsHBox"
+                    class="sapUiSmallMarginTop boxContainer"
+                    alignItems="Center"
+                >
+                    <VBox>
+                        <HBox
+                            id="idHboxinitial"
+                            alignContent="Start"
+                            class="boxContainer2"
+                            width="auto"
+                        >
+                            <Image
+                                id="idImageLogoAvatarinitial"
+                                src="https://artihcus.com/assets/img/AG-logo.png"
+                                class="sapUiSmallMarginEnd logo"
+                                width="80%"
+                                height="30%"
+                            />
+                            <Title
+                                id="initialscreentitle"
+                                text="CAPModel RF"
+                                class="capModelRFText sapUiSmallMarginBottom"
+                            />
+                        </HBox>
+                        <HBox
+                            id="idHboxButtons"
+                            alignContent="Start"
+                        >
+                            <Button
+                                id="idButtonAdd"
+                                icon="sap-icon://add"
+                                tooltip="Add"
+                                press="handleAddPress"
+                                class="button"
+                            />
+                            <Button
+                                id="idButtonEdit"
+                                icon="sap-icon://edit"
+                                tooltip="Edit"
+                                press="onEditConfiguredSystem"
+                                class="button"
+                            />
+                            <Button
+                                id="idButtonDelete"
+                                icon="sap-icon://delete"
+                                tooltip="Delete"
+                                press="onDeleteConfiguredSystem"
+                                class="button"
+                            />
+                        </HBox>
+                    </VBox>
+                    <Link
+                        id="_IDCofiguresapLink"
+                        text="Configure SAP system"
+                        press="handleLinksapPress"
+                    />
+                    <Button
+                        id="idBtnText123"
+                        text="Button123"
+                        type="Emphasized"
+                    />
+                    <Button
+                        id="idBtnText456"
+                        text="Button456"
+                        type="Emphasized"
+                    />
+                    <Button
+                        id="idBtnText789"
+                        text="Button789"
+                        type="Emphasized"
+                    />
+                </VBox>
+            </FlexBox>
+        </content>
+    </Page>
 </mvc:View>
+
